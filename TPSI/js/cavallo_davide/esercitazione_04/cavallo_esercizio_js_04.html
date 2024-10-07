@@ -9,14 +9,15 @@
     <meta name="description" content="Esercizio 04">
     <meta name="keywords" content="reti, localhost, IPv4, loopback">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="macaluso_esercizio_js_04.js"></script>
+    <script src="/cavallo_esercizio_js_04.js"></script>
     <title>Esercizio 04</title>
 </head>
+
 
 <body>
     <button onclick="modifica_stile()">MODIFICA DOM</button>
     <!-- Corpo principale della pagina HTML-->
-    <h1 class="titoloL1" style="color: black;">Reti</h1>
+    <h1 class="titoloL1">Reti</h1>
     <h2 class="titoloL2">localhost</h2>
     <p id="par1">In computer networking, <a href="https://en.wikipedia.org/wiki/Localhost">localhost</a> is a hostname
         that refers
@@ -34,7 +35,7 @@
         The name localhost normally resolves to the <abbr>IPv4</abbr> <small>loopback</small> address 127.0.0.1, and to
         the <abbr>IPv6</abbr> loopback address ::1.
     </p>
-    <img src="Esercizio%2004_files/internet.webp" alt="Rete">
+    <img src="cavallo_esercizio_js_04_files/internet.webp" alt="Rete">
 
     <h2 class="titoloL2">Name resolution</h2>
     <p id="par3"><a href="https://en.wikipedia.org/wiki/IPv4">IPv4</a> network standards reserve the entire address
@@ -45,7 +46,7 @@
         applications on the host, all listening on the same port number. The IPv6 standard assigns only a single address
         for loopback: ::1.
         The <strong>resolution</strong> of the name <small>localhost</small> to one or more <q>IP addresses is normally
-            configured by the following lines in the operating system's hosts file:</q>turetta
+            configured by the following lines in the operating system's hosts file:</q>
         127.0.0.1 localhost
         ::1 <em>localhost</em>
     </p>
@@ -91,7 +92,7 @@
         "Special Use IPv4 Addresses" <s>standard</s> (RFC 5735).[5] The reservation can be traced back to the
         <ins>November 1986</ins> "Assigned Numbers" standard (RFC <sup>990</sup>).
     </p>
-    <img src="Esercizio%2004_files/ipAddress.png" alt="ipAddress">
+    <img src="cavallo_esercizio_js_04_files/ipAddress.png" alt="ipAddress">
     <div style="background-color: blue; color: white;">
         <p>In contrast, the <i>IETF</i> "IP Version 6 Addressing Architecture" <em>standard</em> (RFC 4291) reserves the
             single <u>IPv6</u> loopback address ::1 within the IPv6 address space. The standard precludes the assignment
@@ -103,7 +104,7 @@
     <p id="par7">The processing of any <span style="color: green;">packet</span> sent to a loopback address, is
         implemented in the
         link layer of the TCP/IP stack. Such packets are never passed to any <ins>network</ins> interface controller
-        (NIC) or hardware device driver and must not appear outside of a computing system, orturetta be routed by any
+        (NIC) or hardware device driver and must not appear outside of a computing system, or be routed by any
         <i>router</i>. This permits software testing and local services in the absence of any hardware network
         interfaces.
     </p>
@@ -130,7 +131,7 @@
         loopback interface requires the direct use of the explicit address.
     </p>
     <a href="https://www.mysql.com/">
-        <img src="Esercizio%2004_files/mysql.png" alt="mysql logo">
+        <img src="cavallo_esercizio_js_04_files/mysql.png" alt="mysql logo">
     </a>
     <p>One <mark>notable</mark> <em>exception</em> to the use of the <span style="color: blue;">127.0.0.0/8</span>
         <b>addresses</b> is their use in <b>Multiprotocol</b> Label Switching (MPLS) traceroute <del>error</del>
@@ -144,10 +145,6 @@
                             e non solo. Viva le reti!!!
                         </pre>
 
+ </body>
 
-    <script>
-
-        
-
-    </script>
-</body></html>
+</html>
