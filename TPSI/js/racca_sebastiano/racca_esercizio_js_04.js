@@ -1,15 +1,15 @@
-[...document.getElementsByName('h1')].forEach(el => {
+[...document.getElementsByTagName('h1')].forEach(el => {
     el.style.color = 'red';
 });
 
-[...document.getElementsByName('h2')].forEach(el => {
+[...document.getElementsByTagName('h2')].forEach(el => {
     el.style.color = 'blue';
     el.style.backgroundColor = 'yellow';
     el.style.fontSize = '40px';
     el.innerText = el.innerText.toUpperCase();
 });
 
-[...document.getElementsByName('p')].forEach((el, idx) => {
+[...document.getElementsByTagName('p')].forEach((el, idx) => {
     switch (idx) {
         case 0:
         case 4:
