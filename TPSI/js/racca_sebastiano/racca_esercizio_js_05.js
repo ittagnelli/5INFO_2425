@@ -21,16 +21,16 @@ const onSubmit = (e) => {
 };
 
 const colora = (e) => {
-    e.preventDefault();
-    tableBody.childNodes.forEach((tr, index) => {
-        tr.classList.add(index % 2 == 0 ? "blue" : "rosso");
-    });
-}
+  e.preventDefault();
+  tableBody.childNodes.forEach((tr, index) => {
+    tr.classList.add(index % 2 == 0 ? "blue" : "rosso");
+  });
+};
 
 const form = document.getElementById("form");
 form.addEventListener("submit", onSubmit);
 
-const coloraBtn = document.getElementById('btn_colore');
-coloraBtn.addEventListener('click', colora);
+const coloraBtn = document.getElementById("btn_colore");
+coloraBtn.addEventListener("click", colora);
 
 const tableBody = document.getElementById("body_tabella");
