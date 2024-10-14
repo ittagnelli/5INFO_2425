@@ -1,0 +1,28 @@
+.main-title {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+}
+
+table {
+    margin: auto;
+    width: 60%;
+    border-spacing: 0px 15px;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+}
+
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alert {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+}
