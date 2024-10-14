@@ -1,0 +1,69 @@
+
+<!DOCTYPE html> <!-- HTML5-->
+<html lang="it">
+<!-- Pagina HTML -->
+
+<head>
+    <!-- Qui vanno inserite informazioni relative alla pagina ma che non saranno visualizzate -->
+    <!-- sezione meta Fornisce informazioni al web browser e ai motori di ricerca per il processo di indicizzazione -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Antonio Mancuso" />
+    <meta name="description" content="Empty Page" />
+    <meta name="keywords" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es 05</title>
+
+    <script>
+        function inserisci() {
+            let row = document.createElement("tr");
+            let nome = document.createElement("td")
+            nome.innerText = document.getElementById("nome").value;
+            row.append(nome);
+            let media = document.createElement("td")
+            media.innerText = document.getElementById("media").value;
+            row.append(media);
+            document.getElementById("tabella").append(row);
+        }
+
+        function colore() {
+            let rows = document.getElementsByTagName("tr");
+            let pari = true;
+            console.log(rows);
+            for (let row of rows) {
+                if(pari)
+                    row.classList.add("blu")
+                else 
+                    row.classList.add("rosso")
+                pari = !pari;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input name="nome" id="nome" type="text">
+    <label for="nome">Nome</label>
+    <input name="media"id="media" type="number">
+    <label for="media">Media</label>
+    <button onclick="inserisci()">Inserisci</button>
+
+    <table id="tabella">
+        <tr>
+            <td>Nome</td>
+            <td>Media</td>
+        </tr>
+    </table>
+
+    <button onclick="colore()">Cambia Colore</button>
+
+    <style>
+        .blu {
+            color: blue;
+        }
+        .rosso {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
