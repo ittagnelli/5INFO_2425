@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="catalano_esercizio_js_07.css">
+    <title>Rubrica JS</title>
+</head>
+<body>
+
+    <h1 class="main-title">Rubrica JS</h1>
+
+    <div id="alert-message" class="alert"></div> 
+    
+    <table id="rubrica">
+        <tr>
+            <th>Cognome</th>
+            <th>Nome</th>
+            <th>Indirizzo</th>
+            <th>Telefono</th>
+            <th colspan="2">Azioni</th>
+        </tr>
+        <tr class="inputx">
+            <td><input type="text" id="cognome" size="15"/></td>
+            <td><input type="text" id="nome" size="15"/></td>
+            <td><input type="text" id="indirizzo" size="30"/></td>
+            <td><input type="text" id="telefono" size="10"/></td>
+            <td>
+                <button id="button1">Cerca</button>
+            </td>
+            <td>
+                <button id="button2">Salva</button>
+            </td>
+            <td>
+                <button id="button4">Rimuovi</button>
+            </td>
+            <td>
+                <button id="button3">Aggiorna</button>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Marconi</td>
+            <td>Guglielmo</td>
+            <td>Via Spalato 33</td>
+            <td>3332545434</td>
+            <td colspan="2">
+                <button class="rimuoviButton">Rimuovi</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Torvalds</td>
+            <td>Linus</td>
+            <td>Strada Kernel 6</td>
+            <td>432323432</td>
+            <td colspan="2">
+                <button class="rimuoviButton">Rimuovi</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="catalano_esercizio_js_07.js"></script> 
+</body>
+</html>
