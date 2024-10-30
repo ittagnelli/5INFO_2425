@@ -13,31 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Es 05</title>
 
-    <script>
-        function inserisci() {
-            let row = document.createElement("tr");
-            let nome = document.createElement("td")
-            nome.innerText = document.getElementById("nome").value;
-            row.append(nome);
-            let media = document.createElement("td")
-            media.innerText = document.getElementById("media").value;
-            row.append(media);
-            document.getElementById("tabella").append(row);
-        }
-
-        function colore() {
-            let rows = document.getElementsByTagName("tr");
-            let pari = true;
-            console.log(rows);
-            for (let row of rows) {
-                if(pari)
-                    row.classList.add("blu")
-                else 
-                    row.classList.add("rosso")
-                pari = !pari;
-            }
-        }
-    </script>
+    <script src="./garabello_esercizio_js_06.js"></script>
 </head>
 
 <body>
@@ -55,6 +31,9 @@
     </table>
 
     <button onclick="colore()">Cambia Colore</button>
+    <button onclick="blu()">Blue</button>
+    <button onclick="bordo()">Bordo</button>
+    <button onclick="grassetto()">Grassetto</button>
 
     <style>
         .blu {
@@ -62,6 +41,12 @@
         }
         .rosso {
             color: red;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .bordo {
+            border: 1px solid black;
         }
     </style>
 </body>
