@@ -38,6 +38,6 @@ function remove(id) {
 
 function check(id) {
 	let tr = document.getElementById(id);
-	let tdTitolo = tr.querySelector("td"); // Seleziona il primo <td> (titolo)
-	tdTitolo.classList.toggle("completed"); // Aggiungi o rimuovi la classe "completed"
+	let tdTitolo = tr.querySelector("td");
+	tdTitolo.classList.toggle("completed");
 }
