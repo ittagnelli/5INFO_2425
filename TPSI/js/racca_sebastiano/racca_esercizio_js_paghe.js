@@ -9,18 +9,21 @@ const getData = () => {
   return res;
 };
 
-const dataToArray = (data) =>  Object.values(data);
+const dataToArray = (data) => Object.values(data);
 
-const numberOfRows = () => getBodyTabella().rows.length;
+const getPaghe = () => document.getElementsByClassName("paga");
+
+const numberOfRows = () => getPaghe().length;
+
 const checkNumberOfRows = () => {
-    const rows = numberOfRows();
-    if(rows < 2) {
-        alert("Inserisci almeno 2 paghe");  
-        return false;
-    }
+  const rows = numberOfRows();
+  if (rows < 2) {
+    alert("Inserisci almeno 2 paghe");
+    return false;
+  }
 
-    return rows;
-}
+  return true;
+};
 
 const checkAndGetData = () => {
   const data = getData();
@@ -36,19 +39,26 @@ const checkAndGetData = () => {
   return already_warned ? false : data;
 };
 
-const appendToTable = (data) => {
-  const table = getBodyTabella();
+const createRow = () => {
+    const tr = document.createElement("tr");
+    tr.classList.add("paga");
+    return tr;
+}
 
-  const row = table.insertRow();
-  dataToArray(data).forEach(d => {
+const appendToTable = (data) => {
+  const row = createRow();
+
+  dataToArray(data).forEach((d) => {
     const cell = row.insertCell();
     cell.innerText = d.value;
 
-    if(d.id == "importo") {
-        cell.innerHTML += "&euro;";
-        cell.classList.add("importo");
+    if (d.id == "importo") {
+      cell.innerHTML += "&euro;";
+      cell.classList.add("importo");
     }
-  })
+  });
+
+  getTabella().childNodes[1].insertBefore(row, getPagheEntryPoint());
 };
 
 const aggiungi = () => {
@@ -60,34 +70,36 @@ const aggiungi = () => {
 };
 
 const displayElements = (elClass) => {
-    [...document.getElementsByClassName(elClass)].forEach(el => {
-        el.classList.remove("hidden");
-    })
-}
+  [...document.getElementsByClassName(elClass)].forEach((el) => {
+    el.classList.remove("hidden");
+  });
+};
 
 const getTotale = () => {
-    let tot = 0; 
-    [...getBodyTabella().rows].forEach(r => {
-        tot += parseInt(r.cells.item(r.cells.length - 1).innerText);
-    })
+  let tot = 0;
+  [...getPaghe()].forEach((r) => {
+    tot += parseInt(r.cells.item(r.cells.length - 1).innerText);
+  });
 
-    return tot;
-}
+  return tot;
+};
 
 const getMedia = () => {
-    return getTotale() / numberOfRows();
-}
+  return getTotale() / numberOfRows();
+};
 
 const somma = () => {
-    checkNumberOfRows();
+  if(checkNumberOfRows()) {
     getSpanTotale().innerText = getTotale();
     displayElements("h-totale");
+  }
 };
 
 const media = () => {
-    checkNumberOfRows();
-    getSpanMedia().innerText = getMedia();
+  if(checkNumberOfRows()) {
+    getSpanMedia().innerText = getMedia().toFixed(2);
     displayElements("h-media");
+  }
 };
 
 const setupEventListeners = () => {
@@ -96,8 +108,8 @@ const setupEventListeners = () => {
   document.getElementById("btn_media").addEventListener("click", media);
 };
 
-/** @returns {HTMLTableElement} */
-const getBodyTabella = () => document.getElementById("lista-paghe");
+const getTabella = () => document.getElementById("paghe");
+const getPagheEntryPoint = () => document.getElementById("paghe-entrypoint");
 const getSpanTotale = () => document.getElementById("totale");
 const getSpanMedia = () => document.getElementById("media");
 
