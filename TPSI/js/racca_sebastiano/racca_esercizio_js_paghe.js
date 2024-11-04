@@ -97,7 +97,7 @@ const somma = () => {
 
 const media = () => {
   if(checkNumberOfRows()) {
-    getSpanMedia().innerText = getMedia().toFixed(2);
+    getSpanMedia().innerText = parseInt(getMedia() * 100) / 100;
     displayElements("h-media");
   }
 };
