@@ -110,10 +110,12 @@ const getTotalCost = () => {
 const inputChange = (e) => {
   const id = e.target.dataset.rowid;
   document.getElementById(`${id}-tot`).innerHTML = getTotalItemCost(id);
+  totale();
 }
 
 const removeCartItem = (e) => {
   document.getElementById(e.target.dataset.rowid).remove();
+  totale();
 }
 
 const totale = () => {
