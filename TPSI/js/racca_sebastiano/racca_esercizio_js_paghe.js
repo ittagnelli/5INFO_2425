@@ -40,10 +40,10 @@ const checkAndGetData = () => {
 };
 
 const createRow = () => {
-    const tr = document.createElement("tr");
-    tr.classList.add("paga");
-    return tr;
-}
+  const tr = document.createElement("tr");
+  tr.classList.add("paga");
+  return tr;
+};
 
 const appendToTable = (data) => {
   const row = createRow();
@@ -89,14 +89,14 @@ const getMedia = () => {
 };
 
 const somma = () => {
-  if(checkNumberOfRows()) {
+  if (checkNumberOfRows()) {
     getSpanTotale().innerText = getTotale();
     displayElements("h-totale");
   }
 };
 
 const media = () => {
-  if(checkNumberOfRows()) {
+  if (checkNumberOfRows()) {
     getSpanMedia().innerText = parseInt(getMedia() * 100) / 100;
     displayElements("h-media");
   }
