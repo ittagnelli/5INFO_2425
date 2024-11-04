@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="racca_esercizio_js_08.css">
+</head>
+<body>
+    <h1>TODO JS</h1>
+
+    <form id="todo-form">
+        <input type="text" name="description" required>
+        <select name="priority" required>
+            <option value="0">Bassa</option>
+            <option value="1">Media</option>
+            <option value="2">Alta</option>
+        </select>
+
+        <button type="submit">&#43;</button>
+    </form>
+
+    <table id="todo-list">
+        <thead>
+            <th>Descrizione</th>
+            <th>Priorità</th>
+            <th>Fatto</th>
+            <th>Cancella</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <script src="racca_esercizio_js_08.js"></script>
+</body>
+</html>
