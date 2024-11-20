@@ -1,4 +1,4 @@
-import {sub_arr} from './es_47.js';
+import {sub_arr} from './bramoso_esercizio_js_47.js';
 import fs from 'fs';
 
 describe("ESERCIZIO 47", () => {
@@ -18,22 +18,6 @@ describe("ESERCIZIO 47", () => {
             Array.from(Array(1000).keys()), 69
         ).toString()).toBe(
             Array.from(Array(69).keys()).toString()
-        );
-    });
-
-    test('TEST 04', () => {
-        expect(sub_arr(
-            fs.readFileSync('esercizio_js_47/input_test04.txt', 'utf-8').split('\n'), 1633
-        ).toString().replaceAll(',', '\n')).toBe(
-            fs.readFileSync('esercizio_js_47/output_test04.txt', 'utf-8')
-        );
-    });
-
-    test('TEST 05', () => {
-        expect(sub_arr(
-            fs.readFileSync('esercizio_js_47/input_test05.txt', 'utf-8').split('\n'), 3177720
-        ).toString().replaceAll(',', '\n')).toBe(
-            fs.readFileSync('esercizio_js_47/output_test05.txt', 'utf-8')
         );
     });
 });

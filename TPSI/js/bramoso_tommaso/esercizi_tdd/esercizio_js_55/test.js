@@ -1,4 +1,4 @@
-import { no_copies } from "./es_55.js";
+import { no_copies } from "./bramoso_esercizio_js_55.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 55", () => {

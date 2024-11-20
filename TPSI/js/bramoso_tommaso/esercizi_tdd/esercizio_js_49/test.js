@@ -1,4 +1,4 @@
-import { map_arr } from "./es_49.js";
+import { map_arr } from "./bramoso_esercizio_js_49.js";
 
 describe("ESERCIZIO 49", () => {
     test('TEST 01', () => {

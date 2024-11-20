@@ -1,3 +1,7 @@
 export const new_arr = (n, e) => {
-	//inserisci il tuo codice qui
+    n = Number(n);
+    if (isNaN(n) || n <= 0) {
+        return [];
+    }
+    return Array(n).fill(e);
 };

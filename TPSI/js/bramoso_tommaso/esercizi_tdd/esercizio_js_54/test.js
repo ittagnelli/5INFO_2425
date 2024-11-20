@@ -1,4 +1,4 @@
-import { gen_arr } from "./es_54.js";
+import { gen_arr } from "./bramoso_esercizio_js_54.js";
 
 let generated;
 

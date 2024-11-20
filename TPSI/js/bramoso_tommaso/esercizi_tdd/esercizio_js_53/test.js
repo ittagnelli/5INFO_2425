@@ -1,4 +1,4 @@
-import { shuffle } from "./es_53.js";
+import { shuffle } from "./bramoso_esercizio_js_53.js";
 
 describe("ESERCIZIO 53", () => {
     test('TEST 01', () => {

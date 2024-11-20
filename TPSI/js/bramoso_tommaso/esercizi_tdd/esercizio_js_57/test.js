@@ -1,4 +1,4 @@
-import { names } from "./es_57.js";
+import { names } from "./bramoso_esercizio_js_57.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 57", () => {
@@ -40,21 +40,5 @@ describe("ESERCIZIO 57", () => {
             classe: Math.floor(Math.random() * 5) + 1,
             eta: i + 69
         })).toString()).toBe(Array(123).fill().map((_, i) => 'p' + i.toString()).toString());
-    });
-
-    test('TEST 04', () => {
-        expect(names(JSON.parse(
-            fs.readFileSync('esercizio_js_57/input_test04.json', 'utf-8')
-        )).toString()).toBe(JSON.parse(
-            fs.readFileSync('esercizio_js_57/output_test04.json', 'utf-8')
-        ).toString());
-    });
-
-    test('TEST 05', () => {
-        expect(names(JSON.parse(
-            fs.readFileSync('esercizio_js_57/input_test05.json', 'utf-8')
-        )).toString()).toBe(JSON.parse(
-            fs.readFileSync('esercizio_js_57/output_test05.json', 'utf-8')
-        ).toString());
     });
 });

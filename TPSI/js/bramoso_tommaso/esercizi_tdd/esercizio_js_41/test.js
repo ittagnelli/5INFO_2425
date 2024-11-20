@@ -1,4 +1,4 @@
-import { new_arr } from "./es_41.js";
+import { new_arr } from "./bramoso_esercizio_js_41.js";
 
 describe("ESERCIZIO 41", () => {
     test('TEST 01', () => {

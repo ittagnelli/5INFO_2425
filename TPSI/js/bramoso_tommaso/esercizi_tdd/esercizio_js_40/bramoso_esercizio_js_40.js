@@ -1,3 +1,11 @@
 export const same = (l1, l2) => {
-    //inserisci il tuo codice qui
+    if (l1.length !== l2.length) {
+        return false;
+    }
+    for (let i = 0; i < l1.length; i++) {
+        if (l1[i] !== l2[i]) {
+            return false;
+        }
+    }
+    return true;
 };

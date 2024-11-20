@@ -1,3 +1,3 @@
 export const only_upper = (s) => {
-    //inserisci il tuo codice qui
+    return s.split('').filter(char => char === char.toUpperCase() && /[A-Z]/.test(char));
 };

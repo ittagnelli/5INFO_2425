@@ -1,4 +1,4 @@
-import { same } from "./es_40.js";
+import { same } from "./bramoso_esercizio_js_40.js";
 
 describe("ESERCIZIO 40", () => {
     test('TEST 01', () => {

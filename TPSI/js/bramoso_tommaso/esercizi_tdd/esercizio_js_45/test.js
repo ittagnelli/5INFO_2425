@@ -1,4 +1,4 @@
-import { only_upper } from './es_45.js';
+import { only_upper } from './bramoso_esercizio_js_45.js';
 import fs from 'fs';
 
 describe('ESERCIZIO 45', () => {

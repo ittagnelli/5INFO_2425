@@ -1,4 +1,4 @@
-import { reverse } from "./es_39.js";
+import { reverse } from "./bramoso_esercizio_js_39.js";
 
 describe("ESERCIZIO 39", () => {
     test('TEST 01', () => {

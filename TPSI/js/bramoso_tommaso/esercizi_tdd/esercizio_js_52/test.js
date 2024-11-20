@@ -1,4 +1,4 @@
-import { psw_gen } from "./es_52.js";
+import { psw_gen } from "./bramoso_esercizio_js_52.js";
 
 const regex = /^[a-zA-Z0-9]+$/;
 let generated;

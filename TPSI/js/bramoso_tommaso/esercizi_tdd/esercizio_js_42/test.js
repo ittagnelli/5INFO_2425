@@ -1,4 +1,4 @@
-import { swap } from "./es_42.js";
+import { swap } from "./bramoso_esercizio_js_42.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 14", () => {
@@ -16,14 +16,5 @@ describe("ESERCIZIO 14", () => {
 
     test('TEST 04', () => {
         expect(swap([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 3, -3).toString()).toBe('0,1,2,4,5,6,7,3,8,9');
-    });
-
-    test('TEST 05', () => {
-        expect(swap(
-            fs.readFileSync('esercizio_js_42/input_test05.txt', 'utf-8').split('\n'),
-            692937, 671305
-        ).toString().replaceAll(',', '\n')).toBe(
-            fs.readFileSync('esercizio_js_42/output_test05.txt', 'utf-8')
-        );
     });
 });

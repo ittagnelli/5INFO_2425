@@ -1,6 +1,4 @@
-import { order } from './es_50.js';
-import { input } from './in.js';
-import { output } from './out.js';
+import { order } from './bramoso_esercizio_js_50.js';
 
 describe("ESERCIZIO 50", () => {
     test('TEST 01', () => {

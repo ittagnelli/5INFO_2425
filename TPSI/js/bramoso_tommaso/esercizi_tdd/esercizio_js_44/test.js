@@ -1,4 +1,4 @@
-import { ordina } from './es_44.js';
+import { ordina } from './bramoso_esercizio_js_44.js';
 import fs from 'fs';
 
 describe('ESERCIZIO 44', () => {

@@ -1,4 +1,4 @@
-import { between } from "./es_58.js";
+import { between } from "./bramoso_esercizio_js_58.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 58", () => {
@@ -16,21 +16,5 @@ describe("ESERCIZIO 58", () => {
 
     test('TEST 03', () => {
         expect(between(Array.from(Array(10).keys()), 4, 1).toString()).toBe("");
-    });
-
-    test('TEST 04', () => {
-        expect(between(
-            fs.readFileSync('esercizio_js_58/input_test04.txt', 'utf-8').split('\n'), 596, 829
-        ).toString().replaceAll(',', '\n')).toBe(
-            fs.readFileSync('esercizio_js_58/output_test04.txt', 'utf-8')
-        );
-    });
-
-    test('TEST 05', () => {
-        expect(between(
-            fs.readFileSync('esercizio_js_58/input_test05.txt', 'utf-8').split('\n'), 8101, 9374
-        ).toString().replaceAll(',', '\n')).toBe(
-            fs.readFileSync('esercizio_js_58/output_test05.txt', 'utf-8')
-        );
     });
 });

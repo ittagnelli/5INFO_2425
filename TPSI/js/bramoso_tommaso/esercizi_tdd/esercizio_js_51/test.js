@@ -1,4 +1,4 @@
-import { dec_to_bin } from "./es_51.js";
+import { dec_to_bin } from "./bramoso_esercizio_js_51.js";
 
 describe("ESERCIZIO 51", () => {
     test('TEST 01', () => {

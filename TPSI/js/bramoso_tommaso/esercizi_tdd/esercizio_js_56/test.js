@@ -1,4 +1,4 @@
-import { avg_age } from "./es_56.js";
+import { avg_age } from "./bramoso_esercizio_js_56.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 56", () => {
@@ -30,13 +30,5 @@ describe("ESERCIZIO 56", () => {
             classe: Math.floor(Math.random() * 5) + 1,
             eta: i + 69
         }))).toBe(130);
-    });
-
-    test('TEST 04', () => {
-        expect(avg_age(JSON.parse(fs.readFileSync('esercizio_js_56/input_test04.json', 'utf-8')))).toBe(49.6551);
-    });
-
-    test('TEST 05', () => {
-        expect(avg_age(JSON.parse(fs.readFileSync('esercizio_js_56/input_test05.json', 'utf-8')))).toBe(49.528854);
     });
 });

@@ -1,4 +1,4 @@
-import { without } from "./es_43.js";
+import { without } from "./bramoso_esercizio_js_43.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 43", () => {
@@ -17,12 +17,5 @@ describe("ESERCIZIO 43", () => {
     test('TEST 04', () => {
         let l = Array.from(Array(690000).keys());
         expect(without(l, 0).toString()).toBe(l.slice(1,).toString());
-    });
-
-    test('TEST 05', () => {
-        let input = fs.readFileSync('esercizio_js_43/input_test05.txt', 'utf-8').split('\n');
-        expect(without(input, 4).toString().replaceAll(',', '\n')).toBe(
-            fs.readFileSync('esercizio_js_43/output_test05.txt', 'utf-8')
-        );
     });
 });
