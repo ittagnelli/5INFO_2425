@@ -1,4 +1,4 @@
-import { special_concat } from "./es_32.js";
+import { special_concat } from "./smal_esercizi_js_32.js";
 
 describe("ESERCIZIO 32", () => {
     test('TEST 01', () => {

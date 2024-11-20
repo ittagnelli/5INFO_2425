@@ -1,4 +1,4 @@
-import { capitalize_all } from './es_27.js';
+import { capitalize_all } from './smal_esercizio_js_27.js';
 
 describe("ESERCIZIO 27", () => {
     test('TEST 01', () => {

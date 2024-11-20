@@ -1,4 +1,4 @@
-import { untokenize } from './es_25.js';
+import { untokenize } from './smal_esercizio_js_25.js';
 
 describe("ESERCIZIO 25", () => {
     test('TEST 01', () => {

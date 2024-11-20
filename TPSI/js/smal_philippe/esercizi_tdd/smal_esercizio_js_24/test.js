@@ -1,4 +1,4 @@
-import { protect_email } from './es_24.js';
+import { protect_email } from './smal_esercizio_js_24.js';
 
 describe("ESERCIZIO 24", () => {
     test('TEST 01', () => {
