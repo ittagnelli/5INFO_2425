@@ -1,4 +1,4 @@
-import { capitalize } from './es_26.js';
+import { capitalize } from './bramoso_esercizio_js_26.js';
 
 describe("ESERCIZIO 26", () => {
     test('TEST 01', () => {
@@ -21,4 +21,3 @@ describe("ESERCIZIO 26", () => {
         expect(capitalize('')).toBe('');
     });
 });
-

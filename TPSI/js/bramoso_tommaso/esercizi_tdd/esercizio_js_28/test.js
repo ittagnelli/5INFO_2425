@@ -1,4 +1,4 @@
-import { upper_case } from './es_28.js';
+import { upper_case } from './bramoso_esercizio_js_28.js';
 
 describe("ESERCIZIO 28", () => {
     test('TEST 01', () => {
@@ -21,4 +21,3 @@ describe("ESERCIZIO 28", () => {
         expect(upper_case('CIAO mondo!!!')).toBe('CIAO MONDO!!!');
     });
 });
-

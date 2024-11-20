@@ -21,4 +21,3 @@ describe("ESERCIZIO 24", () => {
         expect(protect_email('andre@email.com')).toBe('an...@email.com');
     });
 });
-

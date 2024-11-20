@@ -1,4 +1,4 @@
-import { capitalize_all } from './es_27.js';
+import { capitalize_all } from './bramoso_esercizio_js_27.js';
 
 describe("ESERCIZIO 27", () => {
     test('TEST 01', () => {
@@ -21,4 +21,3 @@ describe("ESERCIZIO 27", () => {
         expect(capitalize_all('cIao mOndo La Terra gira!!!')).toBe('CIao MOndo La Terra Gira!!!');
     });
 });
-

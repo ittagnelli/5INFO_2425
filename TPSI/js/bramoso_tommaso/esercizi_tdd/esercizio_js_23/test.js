@@ -21,4 +21,3 @@ describe("ESERCIZIO 23", () => {
         expect(abbreviazione('linux torvald')).not.toBe('Linux t.');
     });
 });
-

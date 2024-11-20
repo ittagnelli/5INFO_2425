@@ -1,3 +1,6 @@
 export const capitalize = (str) => {
-    //inserisci il tuo codice qui
-}
+    if (str.length === 0) {
+        return str;
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+};

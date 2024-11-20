@@ -21,4 +21,3 @@ describe("ESERCIZIO 25", () => {
         expect(untokenize('Nel mezzo-del-cammin  di')).toBe('Nel-mezzo-del-cammin--di');
     });
 });
-

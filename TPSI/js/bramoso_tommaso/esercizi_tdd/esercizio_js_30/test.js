@@ -1,4 +1,4 @@
-import { tronca } from "./es_30.js";
+import { tronca } from "./bramoso_esercizio_js_30.js";
 
 describe("ESERCIZIO 30", () => {
     test('TEST 01', () => {

@@ -1,4 +1,4 @@
-import { invert_case } from "./es_29.js";
+import { invert_case } from "./bramoso_esercizio_js_29.js";
 
 describe("ESERCIZIO 29", () => {
     test('TEST 01', () => {
