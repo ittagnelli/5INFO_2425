@@ -1,4 +1,4 @@
-import { search_words } from "./es_31.js";
+import { search_words } from "./bramoso_esercizio_js_31.js";
 
 describe("ESERCIZIO 31", () => {
     test('TEST 01', () => {

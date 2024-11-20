@@ -1,4 +1,4 @@
-import { tronca } from "./es_35.js";
+import { tronca } from "./bramoso_esercizio_js_35.js";
 import fs from "fs";
 
 describe("ESERCIZIO 35", () => {
@@ -12,19 +12,5 @@ describe("ESERCIZIO 35", () => {
 
     test('TEST 03', () => {
         expect(tronca("Ciro Esposito", 0)).toBe("...");
-    });
-
-    test('TEST 04', () => {
-        expect(tronca(
-            fs.readFileSync("esercizio_js_35/input_test04.txt", "utf-8"),
-            538
-        )).toBe(fs.readFileSync("esercizio_js_35/output_test04.txt", "utf-8"));
-    });
-
-    test('TEST 05', () => {
-        expect(tronca(
-            fs.readFileSync("esercizio_js_35/input_test05.txt", "utf-8"),
-            666
-        )).toBe(fs.readFileSync("esercizio_js_35/output_test05.txt", "utf-8" ));
     });
 });

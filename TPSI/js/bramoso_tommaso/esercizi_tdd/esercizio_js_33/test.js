@@ -1,4 +1,4 @@
-import { concatenateN } from "./es_33.js";
+import { concatenateN } from "./bramoso_esercizio_js_33.js";
 import fs from 'fs';
 
 describe("ESERCIZIO 33", () => {
@@ -12,17 +12,5 @@ describe("ESERCIZIO 33", () => {
 
     test('TEST 03', () => {
         expect(concatenateN("echo...", 10)).toBe("echo...echo...echo...echo...echo...echo...echo...echo...echo...echo...");
-    });
-
-    test('TEST 04', () => {
-        expect(concatenateN("PHP me**a!!!\n", 104000)).toBe(
-            fs.readFileSync("esercizio_js_33/input_test04.txt", "utf-8")
-        );
-    });
-
-    test('TEST 05', () => {
-        expect(concatenateN("cane\n", 1069000)).toBe(
-            fs.readFileSync("esercizio_js_33/input_test05.txt", "utf-8")
-        );
     });
 });

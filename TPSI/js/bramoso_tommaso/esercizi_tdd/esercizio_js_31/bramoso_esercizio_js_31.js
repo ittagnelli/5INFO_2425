@@ -1,3 +1,9 @@
 export const search_words = (ph) => {
-    //inserisci il tuo codice qui
+    const hasCoding = ph.includes("coding");
+    const hasCreativo = ph.includes("creativo");
+
+    if (hasCoding || hasCreativo) {
+        return ph;
+    }
+    return 'parole non trovate';
 };
