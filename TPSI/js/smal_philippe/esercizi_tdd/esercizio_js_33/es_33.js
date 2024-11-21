@@ -1,3 +1,3 @@
 export const concatenateN = (s, n) => {
-    //inserisci il tuo codice qui
+    return s.repeat(n)
 };

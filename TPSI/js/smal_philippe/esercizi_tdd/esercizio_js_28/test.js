@@ -1,4 +1,4 @@
-import { upper_case } from './smal_esercizio_js_28.js';
+import { upper_case } from './es_28.js';
 
 describe("ESERCIZIO 28", () => {
     test('TEST 01', () => {
