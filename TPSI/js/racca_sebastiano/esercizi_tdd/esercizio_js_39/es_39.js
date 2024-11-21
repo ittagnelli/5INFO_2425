@@ -1,10 +1,11 @@
-/** @param {any[]} arr */
+/** @param {number[]} arr */
 export const reverse = (arr) => {
-  var output = [];
-
+  let output = [];
+  let somma = 0;
   arr.forEach((_, index) => {
+    somma += arr[arr.length - index - 1];
     output.push(arr[arr.length - index - 1]);
   });
-
+  output.unshift(somma)
   return output;
 };
