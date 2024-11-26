@@ -1,4 +1,4 @@
-import { unique_characters } from "./es_63.js";
+import { unique_characters } from "./bramoso_esercizio_js_63.js";
 import fs from 'fs';
 
 const wordlist_path = process.cwd().includes("esercizio_js_63")

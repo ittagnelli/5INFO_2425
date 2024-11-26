@@ -1,4 +1,4 @@
-import { count_vocals } from "./es_64.js";
+import { count_vocals } from "./bramoso_esercizio_js_64.js";
 import fs, { read } from "fs";
 
 const wordlist_path = process.cwd().includes("esercizio_js_64")
