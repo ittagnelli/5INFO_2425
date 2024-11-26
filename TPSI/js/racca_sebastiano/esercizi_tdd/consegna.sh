@@ -16,4 +16,4 @@ do
     git add $dir
 done
 
-git commit -m "Aggiunti esercizio [$1, $2]"
+git commit -m "Aggiunti esercizi [$1, $2]"
