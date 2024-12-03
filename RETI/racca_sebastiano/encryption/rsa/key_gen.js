@@ -7,8 +7,10 @@ const PRIMI = [
  * Calcola chiave pubblica e privata dati due numeri primi.
  * @param {number} p Un numero primo
  * @param {number} q Un numero primo
+ * 
+ * @returns {{pubblica: number[], privata: number[]}}
  */
-const calcola_chiavi = (p, q) => {
+export const key_gen = (p, q) => {
   const N = p * q;
   const V = (p - 1) * (q - 1);
   const N_PRI = PRIMI.filter((num) => num < V).pop();
@@ -27,4 +29,4 @@ const calcola_chiavi = (p, q) => {
   return { pubblica, privata };
 };
 
-console.log(calcola_chiavi(3, 11));
+console.log(key_gen(3, 11));
