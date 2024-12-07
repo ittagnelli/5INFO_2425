@@ -1,4 +1,4 @@
-import { count_occurence } from "./es_61.js";
+import { count_occurence } from "./bramoso_esercizio_js_61.js";
 import fs from "fs";
 
 const base_path = process.cwd().includes("esercizio_js_61")

@@ -1,4 +1,4 @@
-import { unique_random_numbers } from "./es_62.js";
+import { unique_random_numbers } from "./bramoso_esercizio_js_62.js";
 
 describe("ESERCIZIO 62", () => {
   test("TEST 01", () => {

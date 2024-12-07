@@ -1,4 +1,4 @@
-import { deduplicate } from "./es_59.js";
+import { deduplicate } from "./bramoso_esercizio_js_59.js";
 
 const array = Array.from({ length: 10000 }, () =>
   Math.floor(Math.random() * 100000)

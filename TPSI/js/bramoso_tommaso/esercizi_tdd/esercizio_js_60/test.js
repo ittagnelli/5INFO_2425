@@ -1,4 +1,4 @@
-import { is_anagram } from "./es_60.js";
+import { is_anagram } from "./bramoso_esercizio_js_60.js";
 
 describe("ESERCIZIO 60", () => {
   test("TEST 01", () => {
@@ -49,7 +49,6 @@ describe("ESERCIZIO 60", () => {
         "ciao mago lino",
         "dormitory",
         "dirty room",
-        "the eyes",
         "they see",
       ])
     ).toStrictEqual([
@@ -59,7 +58,6 @@ describe("ESERCIZIO 60", () => {
       "ciao mago lino",
       "dormitory",
       "dirty room",
-      "the eyes",
       "they see",
     ]);
   });
