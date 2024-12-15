@@ -1,34 +1,3 @@
-// Testo dell'esercizio:
-/**
-export class Poligono {
-  constructor(num_lati, valore_lati) {}
-
-  set num_lati(value) {}
-
-  get num_lati() {}
-
-  set lato(value) {}
-
-  get lato() {}
-
-  get perimetro() {}
-
-  get area() {}
-}
-
-export class Quadrato extends Poligono {}
-
-export class TriangoloEquilatero extends Poligono {}
-
-export class Pentagono extends Poligono {}
-
-export class Esagono extends Poligono {}
-
-export class Ettagono extends Poligono {}
-
-export class Ottagono extends Poligono {}
-*/
-
 export class Poligono {
   constructor(num_lati, valore_lati) {
     this.num_lati = num_lati;
