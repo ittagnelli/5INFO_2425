@@ -37,5 +37,9 @@ function findKeys(p, q) {
     Keys.push([N, Npriv], [N, findNpub(Npriv, V, 2)]);
     return Keys;
 }
+
+if(process.argv.length != 4)
+    process.exit(1);
+    
 [,,p, q] = process.argv
 console.log(findKeys(p, q));
