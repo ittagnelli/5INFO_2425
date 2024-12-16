@@ -1,4 +1,4 @@
-+page.svelte
+
 
 <script>
     import TodoList from "../components/todo_list.svelte";

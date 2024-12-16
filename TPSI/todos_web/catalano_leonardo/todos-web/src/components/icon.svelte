@@ -1,4 +1,4 @@
-icon.svelte
+
 
 <div>
     ICONA
