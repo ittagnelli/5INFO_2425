@@ -1,5 +1,9 @@
+<script>
+    import TodoList from "../components/todo_list.svelte";
+</script>
+
 <main>
-    <h1>CONTENITORE PRINCIPALE</h1>
+    <TodoList />
 </main>
 
 <style>
