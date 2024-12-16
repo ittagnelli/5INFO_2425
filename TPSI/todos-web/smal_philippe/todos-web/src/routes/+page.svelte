@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<main>
+    <h1>CONTENITORE PRINCIPALE</h1>
+</main>
+
+<style>
+    main {
+        border: 3px solid red;
+        width: 60%;
+        height: 90vh;
+        margin:  auto;
+    }
+</style>
