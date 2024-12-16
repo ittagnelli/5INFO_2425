@@ -1,5 +1,6 @@
 <script>
     import Icon from "./icon.svelte"
+    import ToDoItem from "./todo_item.svelte"
 </script>
 <h1>ToDos</h1>
 <div class="todo-list">
@@ -9,23 +10,11 @@
     <div class="header"><Icon /></div>
     <div class="header"><Icon /></div>
 
-    <div>CELLA 1</div>
-    <div>CELLA 2</div>
-    <div>CELLA 3</div>
-    <div>CELLA 4</div>
-    <div>CELLA 5</div>
+    <ToDoItem />
 
-    <div>CELLA 1</div>
-    <div>CELLA 2</div>
-    <div>CELLA 3</div>
-    <div>CELLA 4</div>
-    <div>CELLA 5</div>
+    <ToDoItem />
 
-    <div>CELLA 1</div>
-    <div>CELLA 2</div>
-    <div>CELLA 3</div>
-    <div>CELLA 4</div>
-    <div>CELLA 5</div>
+    <ToDoItem />
 </div>
 
 <style>
