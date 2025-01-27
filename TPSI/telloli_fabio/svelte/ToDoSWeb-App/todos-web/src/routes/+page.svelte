@@ -1,5 +1,4 @@
 <main>
-    <h1>CONTENITORE PRINCIPALE</h1>
     <ToList />
 </main>
 
