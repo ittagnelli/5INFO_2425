@@ -1,0 +1,33 @@
+h1 {
+    font-weight: bolder;
+}
+
+ul {
+    list-style: none;
+    font-size: 40px;
+}
+
+ul button {
+    font-size: 30px;
+}
+    
+.line {
+    text-decoration: line-through;
+}
+
+ul button {
+    background: none;
+    border: none;
+}
+
+.color-0 {
+    color: green;
+}
+
+.color-1 {
+    color: yellow;
+}
+
+.color-2 {
+    color: red;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- HTML5-->
+<html lang="it">
+<!-- Pagina HTML -->
+
+<head>
+    <!-- Qui vanno inserite informazioni relative alla pagina ma che non saranno visualizzate -->
+    <!-- sezione meta Fornisce informazioni al web browser e ai motori di ricerca per il processo di indicizzazione -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Antonio Mancuso" />
+    <meta name="description" content="Empty Page" />
+    <meta name="keywords" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>empty</title>
+
+    <style>
+        .bolder {
+            font-weight: bolder;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pagina Vuota</h1>
+
+    <form method="post">
+        <input type="text" placeholder="nome" id="nome">
+        <input type="text" placeholder="voto" id="voto">
+        <button type="button" id="add">aggiungi</button>
+        <button type="button" id="change">cambia</button>
+        <button type="button" id="grassetto">grassetto</button>
+        <button type="button" id="blue">blue</button>
+        <button type="button" id="bordo">bordo</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>voto</th>
+            </tr>
+        </thead> 
+        <tbody id="tabella"></tbody>
+    </table>
+    <script src="es6.js"></script>
+</body>
+</html>
