@@ -1,0 +1,41 @@
+.main-title {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+}
+table {
+    margin: auto;
+    width: 60%;
+    border-spacing: 0px 15px;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    padding: 9px;
+}
+
+.importo {
+    font-weight: bolder;
+}
+.icon {
+    color: black;
+    font-size: 2rem;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: green;
+    font-weight: bolder;
+}
+.icon-remove {
+    color: red;
+}
+
+.icon-remove:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
