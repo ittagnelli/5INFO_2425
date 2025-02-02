@@ -2,6 +2,20 @@
     import Icon from "./icon.svelte";
     import TodoItem from "./todo_item.svelte";
 
+    let todos = [];
+    let last_id = 0;
+
+    const create_todo = async () => {
+        let todo = {
+            id: ++last_id,
+            task: '',
+            done: false,
+            priority: 3
+        };
+        console.log("create: ", todo);
+        
+        todos = [...todos, todo];
+    }
 </script>
 <h1>ToDos</h1>
 
@@ -10,13 +24,11 @@
     <div class="header"><Icon name="task_alt"/></div>
     <div class="header"><Icon name="list"/></div>
     <div class="header"><Icon name="schedule"/></div>
-    <div class="header"><Icon name="add_box"/></div>
+    <div class="header"><Icon name="add_box" handler={create_todo}/></div>
 
-    <TodoItem />
-    
-    <TodoItem />
-
-    <TodoItem />
+    {#each todos as todo}
+        <TodoItem todo={todo} />
+    {/each}
 </div>
 
 <style>
