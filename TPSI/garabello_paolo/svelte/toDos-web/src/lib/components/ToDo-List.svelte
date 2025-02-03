@@ -1,25 +1,66 @@
 <script>
     import Icon from "./Icon.svelte";
     import ToDoItem from "./ToDo-Item.svelte";
+    let todos = [];
+    let last_id = 0;
+
+    const createTodo = async () => {
+        let todo = {
+            id: ++last_id,
+            task: '',
+            done: false,
+            priority: 3
+        };
+        console.log("created + "+ todo);
+        todos = [...todos, todo];
+    }
+    const change_todo_item = async (e) => {
+        delete_item(e.detail.id);
+    }
+    const delete_item = (id) => {
+        console.log("DELETE", id);
+        todos = todos.filter(t => t.id != id);
+    } 
 </script>
 
-<h1>Todos</h1>
+<h1 class="app-title">Todos</h1>
 <div class="todo-list">
     <div class="header"><Icon name="tag"/></div>
     <div class="header"><Icon name="task_alt"/></div>
     <div class="header"><Icon name="list"/></div>
     <div class="header"><Icon name="schedule"/></div>
-    <div class="header"><Icon name="add_box"/></div>
-    <ToDoItem todo={{id:1,task:"task",done:false,priority:1}}/>  
+    <div class="header header-last"><Icon name="add_box" handler={createTodo}/></div>
+    {#each todos as todo}
+        <ToDoItem todo={todo} on:change={change_todo_item}/>
+    {/each}
 </div>
 
 <style>
+    @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
     .todo-list {
-        border: 3px solid blue;
+        border: 0px solid blue;
         width: 95%;
-        height: 80%;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 4fr 2fr 1fr;
+    }
+
+    .header {
+        border-bottom: 1px solid #E7ECEE;
+        border-right: 1px solid #E7ECEE;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .header-last {
+        border-right: none;
+    }
+
+    .app-title {
+        font-family: 'Permanent Marker', cursive;
+        margin-top: 0px;
+        font-size: 60px;
+        opacity: 0.3;
     }
 </style>
