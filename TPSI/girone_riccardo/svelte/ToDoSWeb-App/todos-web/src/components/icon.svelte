@@ -1,5 +1,6 @@
 <script>
 	export let name;
+	export let handler = () => {};
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 	/>
 </svelte:head>
 
-<span class="material-icons-outlined icon">
+<span class="material-icons-outlined icon" on:click={handler}>
 	{name}
 </span>
 
