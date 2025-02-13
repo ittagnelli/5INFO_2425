@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- HTML5-->
+<html lang="it">
+<!-- Pagina HTML -->
+
+<head>
+    <!-- Qui vanno inserite informazioni relative alla pagina ma che non saranno visualizzate -->
+    <!-- sezione meta Fornisce informazioni al web browser e ai motori di ricerca per il processo di indicizzazione -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Antonio Mancuso" />
+    <meta name="description" content="Empty Page" />
+    <meta name="keywords" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>empty</title>
+
+    <style>
+        .blue {
+            background-color: blue;
+        }
+
+        .rosso {
+            background-color: red;
+        }
+
+        .grassetto {
+            font-weight: bold;
+        }
+
+        .bordo {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pagina Vuota</h1>
+
+    <form id="form">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <br>
+
+        <label for="media">Media</label>
+        <input type="text" name="media" id="media" required>
+
+
+        <button type="submit" id="submit">Aggiungi</button>
+    </form>
+
+    <table id="tabella">
+        <thead>
+            <th>Nome</th>
+            <th>Media</th>
+        </thead>
+
+        <tbody id="body_tabella"></tbody>
+    </table>
+
+    <button id="btn_colore">Colora</button>
+    <button id="btn_grassetto">Grassetto</button>
+    <button id="btn_blue">Blue</button>
+    <button id="btn_bordo">Bordo</button>
+
+    <script src="racca_esercizio_js_06.js"></script>
+</body>
+
+</html>
