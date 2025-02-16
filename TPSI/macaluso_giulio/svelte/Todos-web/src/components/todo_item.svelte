@@ -2,25 +2,32 @@
     import Cell from "./cell.svelte";
     import Icon from "./icon.svelte";
     import Priority from "./priority.svelte";
+    import { createEventDispatcher } from "svelte";
 
     export let todo;
+    const dispatch = createEventDispatcher();
 
     const toggle_status = () => {
-        todo.done = !todo.done;
+        todo.done = !todo.done
+    }
+
+    const item_change = (type) => {
+        dispatch("change", {type: type, id: todo.id})
     }
 
     const edit_task = () => {
-        document.getElementById(todo.id).blur();
+        document.getElementById(todo.id).blur()
     }
 </script>
 
 <Cell>
     {todo.id}
+
 </Cell>
 
 <Cell>
     {#if todo.done == false}
-        <Icon name="circle" handler={toggle_status}/>
+        <Icon name="circle" handler={toggle_status} color="red"/>
     {:else}
         <Icon name="task_alt" handler={toggle_status}/>
     {/if}
@@ -29,7 +36,7 @@
 <Cell>
     <input 
         type="text" 
-        class="todo-item-input-text"
+        class="todo-item-input-text {todo.done == true ? 'text-done' : ''}"
         id={todo.id}
         placeholder="Inserisci il nuovo ToDo"
         bind:value={todo.task}
@@ -37,11 +44,11 @@
 </Cell>
 
 <Cell>
-    <Priority />
+    <Priority disabled={todo.done}/>
 </Cell>
 
-<Cell>
-    <Icon name="delete_forever" />
+<Cell last>
+    <Icon name="delete_forever" handler = {() => item_change("delete")} color={"red"}/>
 </Cell>
 
 <style>
@@ -58,5 +65,10 @@
         color: black;
         padding: 4px;
         padding-left: 10px;
+    }
+
+    .text-done {
+        text-decoration: line-through;
+        opacity: 0.3;
     }
 </style>
