@@ -17,4 +17,8 @@
         line-height: 32px;
         font-size: 18px;
     }
+
+    .cell-last {
+        border-right: none;
+    }
 </style>
