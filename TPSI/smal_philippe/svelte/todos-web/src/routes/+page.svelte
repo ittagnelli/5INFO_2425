@@ -7,9 +7,14 @@
 </main>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    
+    :global(*) {
+        font-family: "Press Start 2P", serif;
+    }
+
     main { 
-        border: 3px solid red;
-        width: 60%;
+        width: 90%;
         height: 90vh;
         margin: auto;
     }
