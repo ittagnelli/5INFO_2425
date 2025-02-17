@@ -5,6 +5,7 @@
     import Priority from "./priority.svelte";
 
     export let todo;
+    let old_priority = todo.priority;
     const dispatch = createEventDispatcher();
 
     const item_change = (type) => {
@@ -17,6 +18,13 @@
 
     const edit_task = () => {
         document.getElementById(todo.id).blur();
+    }
+
+    $: {
+        if(todo.priority != old_priority) {
+            old_priority = todo.priority;
+            item_change('update');
+        }
     }
 </script>
 
