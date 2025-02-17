@@ -1,6 +1,7 @@
 <script>
     import Icon from "./icon.svelte";
     import TodoItem from "./todo_item.svelte";
+    import {onMount} from "svelte";
 
     let todos = []
     let last_id = 0
@@ -12,9 +13,25 @@
             done: false,
             priority: 1
         }
+        
         console.log("CREATE: ", todo);
+        
+        localStorage.setItem('todo' + todo.id, JSON.stringify(todo))
+
         todos = [...todos, todo]
+        
     }
+
+    onMount(async () =>{
+        for (let i = 0; i< localStorage.length; i++) {
+          const key = localStorage.key(i);
+          const todo = JSON.parse(localStorage.getItem(key))
+          if(todo != null){
+            todos.push(todo);
+          }
+        }
+        todos = [...todos];
+    });
 
     const change_todo_item = async (e) => {
         delete_item(e.detail.id)
@@ -24,6 +41,8 @@
         console.log("DELETE:", id);
         todos = todos.filter(t => t.id != id)
     }
+
+
 </script>
 
 <h1 class="app-title">ToDos</h1>
