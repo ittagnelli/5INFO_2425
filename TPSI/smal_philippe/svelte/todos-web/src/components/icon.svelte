@@ -5,14 +5,17 @@
 
 <script>
     export let nome
+    export let handler = () => {};
+    export let color = "green"
 </script>
 
-<span class="material-icons-outlined icon">
+<span class="material-icons-outlined icon" on:click={handler} style="--color:{color};">
     {nome}
 </span>
 
 <style>
     .icon {
+        color: var(--color);
         font-size: 32px;
     }
 
