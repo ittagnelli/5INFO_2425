@@ -4,7 +4,6 @@
 </script>
 
 <main>
-    <h1>Contenitore principale</h1>
     <ToDoList/>
     </main>
 

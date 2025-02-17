@@ -3,14 +3,17 @@
     import Cell from "./Cell.svelte";
     import Icon from "./Icon.svelte";
     import Priority from "./Priority.svelte";
-    export let todo;
+
+    const { todo } = $props();
 
     const toggleStatus = () => {
-        todo.done = !todo.done
+        todo.done = !todo.done;
+        item_change('update');
     }
 
     const editTask = () => {
         document.getElementById(todo.id).blur();
+        item_change('update');
     }
 
     const dispatch = createEventDispatcher();
@@ -18,6 +21,15 @@
     const item_change = (type) => {
         dispatch ('change', {type:type, id: todo.id});
     }
+    
+    let old_prioroity = todo.priority;
+
+    $effect(() => {
+        if(todo.priority != old_prioroity) {
+            old_prioroity = todo.priority;
+            item_change('update');
+        }
+    })
 </script>
 
 <Cell>
